@@ -4,29 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/3f957754fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <nav class="menu">
-        <img>imagen</img>
-        <p1>Damián Costa Blanco</p1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">LINKEDIN/GITHUB</a></li>
-        </ul>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="images/bersker.png" alt="Profile Picture" class="profile-pic">
+            <h1>Damián Costa Blanco</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/Damiancb97" class="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dami%C3%A1n-costa-blanco-6b483a303/" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="scredy">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </aside>
 
-
-    </nav>
-
-    <body class="bodyContainer">
-        <p>{
-            Damián Costa blanco
-            }</p>
-    </body>
+        <main class="content">
+            <pre class="json-code">
+{
+  "name": "Damián Costa Blanco",
+  "age": 27,
+  "country": "Spain",
+  "job": "Full stack developer",
+  "email": "damiancb97@gmail.com",
+  "currentJob": "Nada"
+}
+      </pre>
+        </main>
+    </div>
 </body>
 
 </html>

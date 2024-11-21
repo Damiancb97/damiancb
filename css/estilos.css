@@ -1,83 +1,95 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* styles.css */
 body {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    /* La barra lateral ocupa el 15% y el contenido principal el 85% */
-    grid-template-rows: 100vh;
-    /* Toda la altura del viewport */
-    grid-template-areas:
-        "nav bodyContainer";
-    /* Define las áreas de diseño */
-    height: 100vh;
-    /* Asegura que la cuadrícula ocupe toda la pantalla */
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #1e1e1e;
 }
 
-nav {
-    grid-area: nav;
-    /* Asigna el área de la barra lateral */
-    background-color: aqua;
-    /* Fondo oscuro */
-    color: #black;
-    /* Texto blanco */
+.container {
     display: flex;
-    /* Usamos flexbox para alinear los elementos */
-    flex-direction: column;
-    /* Los elementos estarán en columna */
-    align-items: center;
-    /* Alineación horizontal al centro */
-    justify-content: space-between;
-    /* Distribuye los elementos equitativamente */
-    padding: 20px;
-    /* Espaciado interno */
+    height: 100vh;
+    justify-items: center;
+    background: url('/images/wallpaperDamiancb.png') no-repeat center center/cover;
+    /* Imagen de fondo */
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Cambiar la dirección a vertical */
+    justify-content: space-evenly;
+    width: 20%;
+    background: #2e2e2e;
+    padding: 20px;
     text-align: center;
 }
 
-nav ul li {
-    margin: 20px 0;
-    font-size: 1.2em;
+.profile-pic {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-nav ul li a {
+.sidebar h1 {
+    color: #9cfc97;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 30px 0;
+}
+
+.sidebar nav ul li a {
     text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+    color: white;
+    font-size: 18px;
 }
 
-nav ul li a:hover {
-    color: limegreen;
-    /* Efecto hover en los enlaces */
+.sidebar nav ul li a:hover {
+    color: #9cfc97;
 }
 
-nav .social-icons {
+.social-links {
+    /* bottom: -10px; */
+}
+
+.github,
+.linkedin,
+.scredy {
+    text-decoration: none;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.content {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-nav .social-icons img {
-    width: 30px;
-    height: 30px;
-}
-
-.bodyContainer {
-    grid-area: bodyContainer;
-    /* Asigna el área del contenido principal */
-    background: linear-gradient(to right, #202020, #303030);
-    /* Fondo estilizado */
-    color: limegreen;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
     padding: 20px;
-    font-size: 1.2em;
-    overflow: auto;
-    /* Permite scroll si el contenido es grande */
+    /* overflow: auto; */
+    /* background: url('code-background.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+    /* filter: blur(3px); */
+}
+
+.json-code {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    width: auto;
+    font-size: 20px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #9cfc97;
+    font-family: 'Courier New', Courier, monospace;
 }
