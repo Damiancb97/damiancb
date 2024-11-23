@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Progress Circles</title>
+    <link rel="stylesheet" href="css/testeo.css">
+</head>
+
+<body>
+    <div class="circle-container">
+        <!-- Circle 1 -->
+        <div class="circle">
+            <svg>
+                <defs>
+                    <linearGradient id="gradient-90" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="50%" stop-color="yellow" />
+                        <stop offset="100%" stop-color="green" />
+                    </linearGradient>
+                </defs>
+                <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-circle" cx="50" cy="50" r="45"
+                    style="--percent: 90; stroke: url(#gradient-90);"></circle>
+            </svg>
+        </div>
+
+        <!-- Circle 2 -->
+        <div class="circle">
+            <svg>
+                <defs>
+                    <linearGradient id="gradient-60" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="50%" stop-color="yellow" />
+                        <stop offset="100%" stop-color="green" />
+                    </linearGradient>
+                </defs>
+                <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-circle" cx="50" cy="50" r="45"
+                    style="--percent: 60; stroke: url(#gradient-60);"></circle>
+            </svg>
+        </div>
+
+        <!-- Circle 3 -->
+        <div class="circle">
+            <svg>
+                <defs>
+                    <linearGradient id="gradient-30" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="50%" stop-color="yellow" />
+                        <stop offset="100%" stop-color="green" />
+                    </linearGradient>
+                </defs>
+                <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-circle" cx="50" cy="50" r="45"
+                    style="--percent: 30; stroke: url(#gradient-30);"></circle>
+            </svg>
+        </div>
+
+        <!-- Circle 4 -->
+        <div class="circle">
+            <svg>
+                <defs>
+                    <linearGradient id="gradient-10" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="50%" stop-color="yellow" />
+                        <stop offset="100%" stop-color="green" />
+                    </linearGradient>
+                </defs>
+                <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-circle" cx="50" cy="50" r="45"
+                    style="--percent: 10; stroke: url(#gradient-10);"></circle>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>

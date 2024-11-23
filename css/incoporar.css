@@ -107,7 +107,7 @@ body {
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
-    margin: 30px 0px;
+    margin: 15px 0px;
 }
 
 .row span {
@@ -123,7 +123,7 @@ body {
 .circle-container {
     margin-left: 30px;
     display: flex;
-    gap: 48px;
+    gap: 50px;
 }
 
 /* Circle Container */
@@ -164,13 +164,6 @@ svg {
     /*transiccion del color del circulo*/
 }
 
-.content img {
-    max-width: 300px;
-    max-height: 200px;
-    object-fit: contain;
-    border-radius: 40%;
-    margin-bottom: 10px;
-}
 
 /*Free code camp*/
 .info h2 {
