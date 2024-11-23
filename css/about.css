@@ -11,7 +11,7 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     justify-items: center;
 
 }
@@ -27,6 +27,10 @@ body {
     /* Fondo con transparencia */
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
 }
 
 .profile-pic {
