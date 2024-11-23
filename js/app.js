@@ -1,6 +1,15 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    hljs.highlightAll();
-  });
-</script>
+  let birthDate = new Date("1999/04/26");
+
+  function getAge(date) {
+  const today = new Date();
+  let age = today.getFullYear() - date.getFullYear();
+  const m = today.getMonth() - date.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+  $: age = getAge(birthDate);
+</script >

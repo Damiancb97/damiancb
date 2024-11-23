@@ -84,14 +84,55 @@ img .profile-pic {
     /* filter: blur(3px); */
 }
 
-.json-code {
+.info {
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    width: auto;
+    flex-direction: column;
+    /* Cambia a columna */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    width: 100%;
     font-size: 20px;
     height: auto;
     padding: 20px;
     border-radius: 10px;
     color: #9cfc97;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    /* Centra el texto */
+}
+
+/*Free code camp*/
+.info h2 {
+    margin-bottom: 20px;
+    /* Espaciado entre el título y la lista */
+    font-size: 2rem;
+    /* Tamaño del texto */
+    color: yellow;
+    display: flex;
+}
+
+/* Ajustar los elementos de la lista */
+.fccamp,
+.cisco {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    /* Alinea los elementos en columna */
+    align-items: center;
+    /* Centra los elementos de la lista */
+}
+
+.fccamp li,
+.cisco li {
+    height: 100%;
+    width: 100%;
+    margin: 10px 50px;
+    /* Espaciado entre los elementos */
+    font-size: 1.2rem;
+    color: white;
 }
