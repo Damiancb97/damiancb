@@ -23,10 +23,10 @@ body {
     /* Cambiar la dirección a vertical */
     justify-content: space-evenly;
     width: 20%;
-    background: #2e2e2e;
+    background-color: rgba(46, 46, 46, 0.884);
+    /* Fondo con transparencia */
     padding: 20px;
     text-align: center;
-    opacity: 0.98;
 }
 
 .profile-pic {
@@ -35,10 +35,6 @@ body {
     object-fit: contain;
     border-radius: 50%;
     margin-bottom: 10px;
-}
-
-img .profile-pic {
-    opacity: 1;
 }
 
 .sidebar h1 {
