@@ -96,76 +96,6 @@ body {
     /* text-align: center; */
 }
 
-/*languagues*/
-/* Row Styling */
-.row {
-    display: flex;
-    align-items: center;
-    margin: 30px 0px;
-}
-
-.row span {
-    width: 150px;
-    text-align: left;
-}
-
-.headers span {
-    font-weight: bold;
-    text-align: center;
-}
-
-.circle-container {
-    margin-left: 30px;
-    display: flex;
-    gap: 48px;
-}
-
-/* Circle Container */
-.circle {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-svg {
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-    /*Rotación sentido agujas reloj*/
-
-}
-
-.bg-circle {
-    fill: none;
-    /*color interior circulo*/
-    stroke: #333;
-    /*color circulo vacío*/
-    stroke-width: 10;
-}
-
-.progress-circle {
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dasharray: 283;
-    /* Circumference of circle: 2πr = 2 * π * 45 */
-    stroke-dashoffset: calc(283 - (283 * var(--percent)) / 100);
-    /* Dynamic offset */
-    transition: stroke-dashoffset 1s ease-in-out;
-    /*transiccion del color del circulo*/
-}
-
-.content img {
-    max-width: 300px;
-    max-height: 200px;
-    object-fit: contain;
-    border-radius: 40%;
-    margin-bottom: 10px;
-}
-
 /*Free code camp*/
 .info h2 {
     border-bottom: 2px solid;
@@ -177,29 +107,11 @@ svg {
     width: 100%
 }
 
-/* Ajustar los elementos de la lista */
-.fccamp,
-.cisco {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.fccamp li,
-.cisco li {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    margin: 10px 50px;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.fccamp li a,
-.cisco li a {
+.correo {
     text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
     color: white;
+    padding: 20px;
 }
+
